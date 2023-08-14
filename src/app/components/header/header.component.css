@@ -1,0 +1,75 @@
+.header{
+  background: white;
+  padding: 0 10px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top:0;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 56px;
+
+}
+
+
+.areaSelect{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.areaSelect span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+}
+
+.areaSelect select{
+  background: #DDDDDD;
+  border:none;
+  width: 186px;
+  height: 24px;
+  border-radius: 8px;
+  padding: 0 15px;
+  outline: none;
+
+}
+
+
+.flex-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #D9D9D9;
+  width: 64px;
+  height: 24px;
+  border-radius: 12px;
+}
+
+.flex-link span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #000000;
+
+}
+
+
+@media (max-width: 768px){
+
+  .flex-link {
+    background: transparent;
+  }
+
+  .flex-link span {
+    display: none;
+  }
+}

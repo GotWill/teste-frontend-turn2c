@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiDogService } from './api-dog.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'teste-angular';
+
+  constructor(private dogService: ApiDogService){
+      
+  }
 }

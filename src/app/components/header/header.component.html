@@ -1,0 +1,18 @@
+<div class="header">
+  <div class="container">
+    <div class="areaSelect">
+      <span>Raça:</span>
+      <select (change)="onBreedSelect($event)">
+        <option value="">Todas as Raças</option>
+        <option *ngFor="let breed of breeds" [value]="breed.id">{{ breed.breed_group }}</option>
+      </select>
+
+    </div>
+    <div >
+        <a routerLink="/perfil" class="flex-link">
+          <img src="assets/user.png" alt="Minha Imagem">
+           <span>Perfil</span>
+        </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<header>
+  <div class="container">
+    <a routerLink="/" class="flex-link">
+      <img src="../../assets/home.png" alt="Home">
+      <span>Home</span>
+
+    </a>
+  </div>
+</header>
+
+<div class="container-flex">
+  <div class="areaPhoto">
+    <div class="content">
+      <h2>Adicionar um cachorro</h2>
+      <input type="file" name="" id="">
+
+      <form (ngSubmit)="enviarImagem()">
+        <label for="file">
+          <img src="../../assets/camera.png" alt="">
+          <span>
+            Clique para selecionar uma<br> imagem
+          </span>
+        </label>
+        <input type="file" name="file" id="file" required (change)="onFileSelected($event)" #fileInput>
+
+        <button type="submit">Enviar foto</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="listCards">
+    <h2>Minhas imagens</h2>
+    <div class="container-imgs">
+
+      <div  *ngFor="let imageUrl of dogBreeds">
+        <div class="card">
+          <img [src]="imageUrl" alt="Dog Image">
+        </div>
+    </div>
+  </div>
+</div>

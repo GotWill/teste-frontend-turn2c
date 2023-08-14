@@ -1,0 +1,33 @@
+<div class="container">
+  <div *ngFor="let breed of dogBreeds">
+    <div class="card">
+      <img [src]="breed.image.url" />
+
+
+
+      <div class="description">
+         <h3>{{breed.name}}</h3>
+
+         <span>{{breed.life_span}}</span>
+      </div>
+   </div>
+  </div>
+</div>
+
+<div class="pagination">
+   <div class="flex">
+    <span>Página: {{ currentPage }}</span>
+
+      <div class="buttons">
+        <button  (click)="prevPage()">
+           <img src="../../../assets/left.png" alt="">
+        </button>
+         <div class="row"></div>
+        <button (click)="nextPage()">
+          <img src="../../../assets/right.png" alt="">
+        </button>
+      </div>
+   </div>
+</div>
+
+
